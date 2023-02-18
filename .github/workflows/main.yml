@@ -23,7 +23,7 @@
 
 name: Github Actions
 on: 
-  - push: [master]
+  push: [master]
 jobs:
   build:
     runs-on: ubuntu-latest
