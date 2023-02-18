@@ -33,4 +33,4 @@ jobs:
       - name: Print node version
         run: npm --version
       - name: Print pwd 
-        run: run pwd
+        run: pwd
