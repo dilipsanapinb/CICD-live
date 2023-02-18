@@ -35,4 +35,4 @@ jobs:
         with:
           node-version: '14.x'
       - name: Print Node Version
-          run: node -version    
+        run: node -v
