@@ -17,14 +17,13 @@ address:
   variable: ${{github.VARIABLE_NAME}}
 
   name: Github action ofr
-  on: 
-    push:
-      branches: [master]
+  on: push:
+      # branches: [master]
   jobs:
     build:
       runs-on: ubuntu-latest
       steps:
         -uses: actions/checkout@v3
         -name: Print Hello World
-        -run: echo "Hello World!"
+          run: echo "Hello World!"
                 
