@@ -26,13 +26,12 @@ on:
   push:
     branches: [master]
 jobs:
-  build:
+  print-version:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Print Hello World
-        run: node --version
-      - name: Print node version
-        run: npm --version
-      - name: Print pwd 
-        run: pwd
+      - name: Install Node.js
+        with:
+          node-version: '14.x'
+      - name: Print Node Version
+        run: node -v    
