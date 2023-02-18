@@ -1,30 +1,38 @@
-
+# This is a YAML file
 title: Website Name
-description: A website for uplooading content
-age: 30
-
+description: A website for sharing content
 tags:
-  -technoogy
-  -images
-  -creative
+  - technology
+  - innovation
+  - creativity
 
-address:
-  street: MG Road
-  city: Nashik
-  state: MH
+person:
+  name: John Smith
+  age: 30
+  address:
+    street: 123 Main St.
+    city: Anytown
+    state: CA
 
-  value: ${{env.VALUE}}
-  variable: ${{github.VARIABLE_NAME}}
+yamlCopy code
+fruits:
+  - apple
+  - banana
+  - orange
 
-  # name of app
-  name: Github action ofr
-  on: push
-      branches: [master]
-  jobs:
-    build:
-      runs-on: ubuntu-latest
-      steps:
-        -uses: actions/checkout@v3
-        -name: Print Hello World
-          run: node --version
-                
+# This is a comment
+
+name: Node.js CI
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node-version }}
+      - run: npm install
+      - run: npm run build
+      - run: npm test
