@@ -16,7 +16,7 @@ address:
   value: ${{env.VALUE}}
   variable: ${{github.VARIABLE_NAME}}
 
-  name: My Application
+  name: Github action ofr
   on: 
     push:
       branches: [master]
@@ -24,6 +24,7 @@ address:
     build:
       runs-on: ubuntu-latest
       steps:
+        -uses: actions/checkout@v3
         -name: Print Hello World
         -run: echo "Hello World!"
                 
