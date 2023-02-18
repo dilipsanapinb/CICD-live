@@ -1,10 +1,10 @@
 # This is a YAML file
-title: Website Name
-description: A website for sharing content
-tags:
-  - technology
-  - innovation
-  - creativity
+# title: Website Name
+# description: A website for sharing content
+# tags:
+#   - technology
+#   - innovation
+#   - creativity
 
 person:
   name: John Smith
