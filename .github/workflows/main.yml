@@ -17,7 +17,7 @@ address:
   variable: ${{github.VARIABLE_NAME}}
 
   name: Github action ofr
-  on: push:
+  on: push
       # branches: [master]
   jobs:
     build:
