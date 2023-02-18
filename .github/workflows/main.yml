@@ -22,7 +22,8 @@
 # as follow
 
 name: Github Actions
-on: [push]
+on: 
+  - push: [master]
 jobs:
   build:
     runs-on: ubuntu-latest
