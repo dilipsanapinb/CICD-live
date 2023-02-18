@@ -6,18 +6,18 @@
 #   - innovation
 #   - creativity
 
-person:
-  name: John Smith
-  age: 30
-  address:
-    street: 123 Main St.
-    city: Anytown
-    state: CA
+# person:
+#   name: John Smith
+#   age: 30
+#   address:
+#     street: 123 Main St.
+#     city: Anytown
+#     state: CA
 
-fruits:
-  - apple
-  - banana
-  - orange
+# fruits:
+#   - apple
+#   - banana
+#   - orange
 # This is a comment
 
 name: Node.js CI
