@@ -16,6 +16,7 @@ address:
   value: ${{env.VALUE}}
   variable: ${{github.VARIABLE_NAME}}
 
+  # name of app
   name: Github action ofr
   on: push
       branches: [master]
