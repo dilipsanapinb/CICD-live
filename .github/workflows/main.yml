@@ -31,4 +31,6 @@ jobs:
       - name: Print Hello World
         run: node --version
       - name: Print node version
-        run: npm --version  
+        run: npm --version
+      - name: Print pwd 
+        run: run pwd
