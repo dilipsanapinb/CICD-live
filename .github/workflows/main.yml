@@ -14,12 +14,10 @@ person:
     city: Anytown
     state: CA
 
-yamlCopy code
 fruits:
   - apple
   - banana
   - orange
-
 # This is a comment
 
 name: Node.js CI
