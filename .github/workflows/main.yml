@@ -15,3 +15,15 @@ address:
 
   value: ${{env.VALUE}}
   variable: ${{github.VARIABLE_NAME}}
+
+  name: My Application
+  on: 
+    push:
+      branches: [master]
+  jobs:
+    build:
+      runs-on: ubuntu-latest
+      steps:
+        -name: Print Hello World
+            run: echo "Hello World !"
+                
