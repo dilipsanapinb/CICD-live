@@ -18,7 +18,7 @@ address:
 
   name: Github action ofr
   on: push
-      # branches: [master]
+      branches: [master]
   jobs:
     build:
       runs-on: ubuntu-latest
